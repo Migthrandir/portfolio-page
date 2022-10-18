@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional de Miguel Araya</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/47e7dd14e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="header-menu">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="menu-items">
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#main-skills">Habilidades</a></li>
+                <li><a href="#main-projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-about">
+            <section class="about-intro">
+                <img src="./assets/foto_perfil.jpg" alt="Foto de Miguel Araya">
+                <div class="about-title-container">   
+                    <h1>Miguel Araya Hervas</h1>
+                    <h2>Frontend web developer jr.</h2>
+                </div>
+            </section>
+
+            <section class="about-description">
+                <h2>👋¡Hola!</h2>
+                <p>Me llamo Miguel y soy un desarrollador web con ganas de crear cosas increíbles.</p>
+            </section>
+        </section>
+
+        <section class="main-skills">
+            <div id="main-skills"></div>
+            <h2>Habilidades</h2>
+            <div class="skills-container">
+                <span class="skills-item">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML5</p>
+                </span>
+                <span class="skills-item">
+                    <i class="fa-brands fa-css3"></i>
+                    <p>CSS3</p>
+                </span>
+                <span class="skills-item">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JavaScript</p>
+                </span>
+                <span class="skills-item">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <p>Git</p>
+                </span>
+                <span class="skills-item">
+                    <i class="fa-brands fa-github"></i>
+                    <p>Github</p>
+                </span>
+                <span class="skills-item">
+                    <i class="fa-brands fa-react"></i>
+                    <p>React.js</p>
+                </span>
+            </div>
+        </section>
+
+        <section class="main-projects">
+            <div id="main-projects"></div>
+            <h2>Proyectos</h2>
+            <div class="project-cards-container" id="project-cards-container">
+                <!-- <div class="project-card">
+                    <h3>Titulo del proyecto</h3>
+                     <img src="" alt="captura de pantalla del proyecto">
+                    <div class="project-card--foot">
+                        <button onclick="window.open('#', '_blank')">View</button>
+                        <button onclick="window.open('#', '_blank')">GitHub-Repo</button>
+                    </div>
+                </div> -->
+                <div class="project-card">
+                    <h3>Titulo del proyecto</h3>
+                    <div class="project-card--foot">
+                        <img src="" alt="">
+                        <button onclick="window.open('#', '_blank')">View</button>
+                        <button onclick="window.open('#', '_blank')">GitHub-Repo</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Titulo del proyecto</h3>
+                    <div class="project-card--foot">
+                        <button class="button-view">View</button>
+                        <button class="button-repo">Github-Repo</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Titulo del proyecto</h3>
+                    <img src="./assets/platzi_movies.png" alt="captura de pantalla del proyecto">
+                    <div class="project-card--foot">
+                        <button class="button-view" onclick="location.href='#'">View</button>
+                        <button class="button-repo" onclick="location.href='#'">Github-Repo</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    
+    <footer>
+        <section class="footer-links-container">
+            <div id="contact"></div>
+            <h2>Contacto</h2>
+            <ul>
+                <li>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/Migthrandir" target="_blank">Migthrandir</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/miguelarayahervas/" target="_blank">miguelarayahervas</a>
+                </li>
+                <li><i class="fa-solid fa-envelope"></i> miguelarayawork@gmail.com</li>
+            </ul>
+        </section>
+    </footer>
+    <script src="./projects.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
