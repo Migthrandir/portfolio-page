@@ -199,6 +199,9 @@ main {
 .project-card h3 {
     align-self: center;
     z-index: 4;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.7rem;
 }
 
 .project-card img {
@@ -217,10 +220,12 @@ main {
 
 .project-card--foot {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 30%;
+    min-height: 30%;
+    height: auto;
     border-radius: 20px;
     background-color: var(--blanco-suave);
     z-index: 3;
@@ -230,6 +235,7 @@ main {
 .project-card--foot button {
     width: 65px;
     height: 25px;
+    margin: 10px 1px 0;
     font-size: 1rem;
     border-radius: 10px;
     
@@ -244,6 +250,26 @@ main {
     from {background: var(--blanco);}
     to {background: var(--verde-palido);}
 } 
+
+.project-card--foot h4 {
+    color: var(--negro);
+    font-size: 1.6rem;
+    margin-top: 5px;
+}
+
+.project-card--foot ul {
+    display: grid;
+    grid-row: auto;
+    grid-template-columns: 45% 45%;
+    gap: 5% 10%;
+    width: 130px;
+    margin: 5px 0;
+    list-style: circle;
+    color: var(--negro);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
 /* Footer */
 
 footer {

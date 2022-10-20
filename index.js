@@ -29,6 +29,19 @@ function createProjectCard (project) {
         projectFoot.appendChild(buttonGithub);
         buttonGithub.setAttribute('onclick', `window.open('${project.buttons.github}', '_blank')`);
         buttonGithub.innerText = 'GitHub-Repo';
+
+        const subTitle = document.createElement('h4');
+        projectFoot.appendChild(subTitle);
+        subTitle.innerText = 'Habilidades Usadas';
+
+        const listSkills = document.createElement('ul');
+        projectFoot.appendChild(listSkills);
+
+        project.skills.forEach(project =>{
+            const skillItem = document.createElement('li');
+            listSkills.appendChild(skillItem);
+            skillItem.innerText = project;
+        });
         
 
     });
